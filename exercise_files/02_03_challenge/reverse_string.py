@@ -12,4 +12,12 @@ s = stack.Stack()
 
 # Your solution here.
 
+# Adding all chars separately into Stack
+for char in string:
+    s.push(char)
+
+# Popping the chars one by one with pop() and build reversed_string
+while not s.is_empty():
+    reversed_string += s.pop()
+
 print(reversed_string)
